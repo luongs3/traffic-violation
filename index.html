@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tra cứu vi phạm giao thông</title>
+    <meta name="description" content="Hệ thống tra cứu thông tin vi phạm giao thông nhanh chóng và chính xác.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L3 7V17L12 22L21 17V7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 22V12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21 7L12 12L3 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M17 4.5L12 7.3L7 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <h1>Tra Cứu Vi Phạm</h1>
+            </div>
+            <p class="subtitle">Tra cứu thông tin xử phạt nguội nhanh chóng</p>
+        </header>
+
+        <main class="main-content">
+            <section class="search-section">
+                <div class="search-box">
+                    <div class="input-wrapper">
+                        <span class="search-icon">
+                            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="11" cy="11" r="8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        <input type="text" id="license-input" placeholder="Nhập biển số xe (VD: 15A35989)" autocomplete="off">
+                    </div>
+                    <button id="search-btn">Tìm Kiếm</button>
+                </div>
+                <p class="hint">Ví dụ: 29D268472, 15A35989...</p>
+            </section>
+
+            <section class="results-section" id="results-container">
+                <!-- Results will be injected here -->
+                <div class="empty-state" id="empty-state">
+                    <p>Nhập biển số để bắt đầu tra cứu</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2026 Hệ thống Tra Cứu Vi Phạm Giao Thông</p>
+        </footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
