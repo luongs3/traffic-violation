@@ -4,3 +4,4 @@ __pycache__/
 # Exclude data processing scripts if you don't want them public
 # update_json.py
 # check_duplicates.py
+traffic-violation-imgs/
