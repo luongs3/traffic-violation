@@ -65,6 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 Tìm thấy <strong>${results.length}</strong> vi phạm cho biển số <strong>${query}</strong>
             </div>
             <div class="results-list">
+                <div class="table-header">
+                    <div class="col-index">STT</div>
+                    <div class="col-plate">Biển số</div>
+                    <div class="col-time">Thời gian vi phạm</div>
+                    <div class="col-type">Loại phương tiện</div>
+                </div>
                 ${results.map(v => `
                     <div class="violation-row">
                         <div class="col-index">#${v.index}</div>
